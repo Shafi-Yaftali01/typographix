@@ -9,6 +9,11 @@
   --background: rgb(255,255,255);
 }
 
+[data-theme="dark"] {
+  --on-background: rgba(255,255,255, 0.9);
+  --background: rgb(18, 18, 18);
+}
+
 /* General  */
 
 html {
@@ -23,6 +28,7 @@ body{
   overflow-x: hidden;
   color: var(--on-background);
   background-color: var(--background);
+  transition: background-color 0.75s ease, color 0.75s ease;
 }
 
 
@@ -53,6 +59,32 @@ h2 {
   font-size: 40px;
 }
 
+/* Section-1  */
+
+/* Dark Mode Switcher  */
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  top: 30px;
+  right: 25px;
+  cursor: pointer;
+}
+  .theme-switcher span {
+    margin-right: 10px;
+    font-size: 1rem;
+    color: var(--on-background);
+  }
+
+.fas {
+  font-size: 30px;
+}
+
+  .fas:hover {
+    transform: scale(1.1);
+  }
 /* Header  */
 .header {
   width: 100vw;
@@ -133,6 +165,7 @@ h2 {
 
 .small-image:not(:first-child) {
   margin-left: 20px;
+
 }
 
 /* Section 4  */
