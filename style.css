@@ -2,6 +2,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Colors  */
+
+:root {
+  --on-background: rgb(66,66,66);
+  --background: rgb(255,255,255);
+}
+
+/* General  */
 
 html {
   box-sizing: border-box;
@@ -12,7 +20,9 @@ body{
   margin: 0;
   min-height: 100vh;  
   font-family: 'jost', sans-serif; 
-  overflow: hidden;
+  overflow-x: hidden;
+  color: var(--on-background);
+  background-color: var(--background);
 }
 
 
@@ -20,12 +30,31 @@ main {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+  color: var(--on-background);
+}
+
+  a:hover {
+    padding-bottom: 5px;
+    border-bottom: 5px solid var(--on-background);
+  }
+
+/* Sections */
+
+section {
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+h2 {
+  font-size: 40px;
+}
+
 /* Header  */
 .header {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, 70%);
   width: 100vw;
 }
 
@@ -69,11 +98,70 @@ main {
 .social-media-icons i:hover{
   transform: scale(1.1);
 }
-/* Footer  */
 
+/* Section-5 */
+
+/* Section-2  */
+
+.main-image {
+  height: 50%;
+  width: auto;
+  position: relative;
+  top: -25%;
+  padding: 20px;
+  border: 10px solid var(--on-background);
+}
+
+
+/* Section 3  */
+
+.image-container {
+
+  position: relative;
+  top: -25%;
+  height: 50vh;
+
+}
+
+.small-image {
+  height: 50%;
+  width: auto;
+  padding: 20px;
+  border: 10px solid var(--on-background);
+}
+
+
+.small-image:not(:first-child) {
+  margin-left: 20px;
+}
+
+/* Section 4  */
+
+.blog-container {
+  margin: 0 auto;
+  width: 50ch;
+}
+
+.blog-item {
+  margin-bottom: 50px;
+}
+
+/* Wave  */
+.wave {
+  width: 100%;
+}
+
+.wave > svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} 
+
+/* Footer  */
 .footer {
   position: absolute;
-  top: calc(100vh - 50px);
+  bottom: 20px;
   width: 100%;
   text-align: center;
-}
+  color: white;
+} 
