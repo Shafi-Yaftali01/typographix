@@ -10,6 +10,23 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation  -->
+  <div class="nav-wrapper">
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <nav id="nav">
+        <ul>
+          <li><a href="#section-1" onclick="hideMenu()">Home</a></li>
+          <li><a href="#section-2" onclick="hideMenu()">About</a></li>
+          <li><a href="#section-3" onclick="hideMenu()">Gallery</a></li>
+          <li><a href="#section-4" onclick="hideMenu()">Blog</a></li>
+          <li><a href="#section-5" onclick="hideMenu()">Contact</a></li>
+        </ul>
+    </nav>
+  </div>
 
   <main>
     <!-- Section-1 -->
@@ -34,10 +51,7 @@
     </section>
         <!-- Section-2 -->
     <section id="section-2">
-      <div>
         <h2>Our New Breads Design</h2>
-
-      </div>
       <img  src="https://unsplash.com/photos/QXSvbDkiJmY/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Nnx8YnJlYWR8ZW58MHx8fHwxNzI0NTIwNTI5fDA&force=true" 
       alt="Fresh Bread" class="main-image">
     </section>
@@ -85,7 +99,7 @@
         </div>
         <!-- Footer  -->
       <footer class="footer">
-        <small>&copy; 2024 Typographix. All rights reserved, created by Shafi Yaftali</small>
+        <small>&copy; 2024 Typographix. created by Shafi Yaftali</small>
       </footer>
     </section>
   </main>
